@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+.hero{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/banner.jpg) ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+
+}
+
+
+
+.form-box{
+    width: 380px;
+    height: 520px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    overflow: hidden;
+
+
+}
+
+
+.btn-group{
+    border-radius: 30px;
+    width: 240px;
+    margin: 34px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px rgba(214, 153, 121, 0.4);
+    text-align: center;
+
+}
+
+.toggleBtn{
+    padding: 12px 30px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    position: relative;
+    font-size: 15px;
+
+  }
+
+
+  #btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #ffcb43;
+    background-image: linear-gradient(319deg, #ffcb43 0%, #ff6425 37%, #ff0016 100%);    height: 100%;
+    width: 120px;
+    border-radius: 30px;
+    color: #fff;
+    transition: .5s;
+
+
+  }
+  .social-links{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  .social-links img{
+    border-radius: 50%;
+    width: 35px;
+    margin:10px;
+    cursor: pointer;
+    box-shadow: 0 2px 12px 0px rgba(0, 0, 0, 0.7);
+
+}
+
+.input-group{
+    width: 300px;
+    top: 180px;
+    position: absolute;
+    transition: .5s;
+}
+
+
+.input-field{
+    width: 100%;
+    border-top: 0;
+    border-left:0;
+    border-right: 0;
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    background: transparent;
+    outline: none;
+}
+
+
+.submit-Btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff4c10, #ffad50);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+
+}
+
+
+.check-box{
+    margin: 20px 0;
+}
+
+#loginForm{
+    left: 40px;
+}
+
+
+#registerForm{
+    left: 430px;
+
+}

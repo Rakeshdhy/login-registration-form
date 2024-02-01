@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration Form Using HTML And CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="hero">
+<div class="form-box">
+<div class="btn-group">
+    <div id="btn"></div>
+    <button type="button" class="toggleBtn" onclick="login()">Log In</button>
+    <button type="button"  class="toggleBtn" onclick="register()">Register</button>
+</div>
+
+<div class="social-links">
+    <img src="images/fb.png" alt="" srcset="">
+    <img src="images/tw.png" alt="" srcset="">
+    <img src="images/gp.png" alt="" srcset="">
+</div>
+
+<form id="loginForm" class="input-group" >
+    <input type="text" placeholder="User Name" class="input-field" required>
+    <input type="text" placeholder="Enter Password" class="input-field" required>
+    <input type="checkbox" name="" id="" class="check-box"> <span>Remember Password</span>
+    <button type="submit" class="submit-Btn">Login</button>
+</form>
+
+<form id="registerForm" class="input-group" >
+    <input type="text" placeholder="User Name" class="input-field" required>
+    <input type="text" placeholder="Email" class="input-field" required>
+    <input type="text" placeholder="Enter Password" class="input-field" required>
+    <input type="checkbox" name="" id="" class="check-box"> <span>Remember Password</span>
+    <button type="submit" class="submit-Btn">Register</button>
+</form>
+
+
+
+</div>
+
+
+
+</div>
+
+
+<script>
+const loginForm = document.getElementById("loginForm");
+const registerForm = document.getElementById("registerForm");
+const toggleBtn = document.getElementById("btn");
+
+
+
+function register(){
+    loginForm.style.left = "-430px";
+    registerForm.style.left ="40px";
+    toggleBtn.style.left = "120px";
+}
+
+function login(){
+    loginForm.style.left = "40px";
+    registerForm.style.left ="430px";
+    toggleBtn.style.left = "0px";
+}
+
+
+
+
+</script>
+
+
+
+    
+</body>
+</html>
